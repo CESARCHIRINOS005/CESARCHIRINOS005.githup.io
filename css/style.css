@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*para deslizarme cuando hago clip en los links del menu*/
+    scroll-behavior: smooth;
+}
+/*MENU*/
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 99;
+
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 40px;
+    color:#1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color:#fff;
+    margin: 0 15px ;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    text-align: none;
+    color:orange;
+    margin: 0 15px ;
+    padding: t6px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header head nav ul li a:hover{
+    color:#1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer; 
+   display: block;
+}
+/*INICIO*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)),
+    url(imagen/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 76px;
+    width: 500px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 8px solid #1CB698; ;
+    display:block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size:42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display:inline-block ;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size:20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes .facebook:hover{
+    background-color:#3b5998 ;
+}
+.inicio .contenido-banner .redes .whatsapp:hover{
+    background-color:#00bb2d  ;
+}
+.inicio .contenido-banner .redes .instagram:hover{
+    background-color:rgb(255, 0, 102) ;
+}
+/*sobre mi*/
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding:  50px 20px;
+}
+.sobremi .contenido-seccion{
+   max-width: 1100px ;
+   margin: auto;
+
+
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin:auto;
+}
+ 
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Work Sans';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color:#1CB698;
+}
+.sobremi .fila .col ul {
+    list-style: none;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+width: 50%;
+}  
+.sobremi .fila .col h3{
+font-size: 28px;
+font-family:'Work Sans'; 
+margin-bottom: 25px ;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col .contenedor-pasatiempo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-pasatiempo .pasatiempo{
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px ;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.sobremi .fila .col .contenedor-pasatiempo .pasatiempo:hover{
+   background-color: orange; 
+}
+.sobremi .fila .col .contenedor-pasatiempo .pasatiempo i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
